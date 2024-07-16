@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --grayishblue: hsl(217, 19%, 35%);
+  --blackishblue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(0, 0%, 81%);
+  --lightgrayishblue: hsl(210, 46%, 95%);
+  --fsize: 13px;
+  --font: "Barlow Semi Condensed", sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--lightgrayishblue);
+    font-family: var(--font);
+}
+.cards{
+    display: flex;
+    width: 70%;
+    margin: 60px;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    flex:74%;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+    flex: 23%;
+}
+.top-section{
+    display: flex;
+}
+.bottom-section{
+    display: flex;
+}
+.card {
+    border-radius: 5px;
+    padding: 25px;
+    margin: 10px;
+    font-size: var(--fsize);
+}
+.card img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 35px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.text{
+    margin-left: 20px;
+}
+.name{
+    font-weight: 600;
+}
+.info{
+    margin-top: -10px;
+    opacity: 50%;
+}
+.testmony{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.description{
+    opacity: 70%;
+    line-height: 20px;
+}
+
+.card1{
+    flex-basis: 65%;
+    background-color: var(--violet);
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+
+}
+.card1 svg{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    right: 60px;
+}
+
+.card2{
+    flex-basis: 25%;
+    background-color: var(--grayishblue);
+    color: var(--white);
+}
+.card3{
+    flex-basis: 25%;
+    background-color: var(--white);
+    color: var(--grayishblue);
+}
+.card4{
+    flex-basis:65%;
+    background-color: var(--blackishblue);
+    color: var(--white);
+}
+.left-section{
+    display: flex;
+}
+.card5{
+   background-color: var(--white);
+}
+@media only screen and (max-width: 800px) {
+    .cards {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+    .top-section{
+        flex-direction: column;
+    }
+    .bottom-section{
+        flex-direction: column;
+    }
+  } 
